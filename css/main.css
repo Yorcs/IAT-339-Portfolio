@@ -1,0 +1,14 @@
+/* Mobile device up to 576 px */
+@media (max-width:575.98px){
+
+}
+
+/* Tablets up to 992px */
+@media (max-width: 991.98px){
+
+}
+
+/* Larger devices */
+@media(min-width:991.98px){
+
+}
