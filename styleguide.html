@@ -18,6 +18,8 @@
             <!-- TODO: Finish nav when pages are built. -->
             <nav>
                 <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>Works</li>
                     <li></li>
                 </ul>
             </nav>
@@ -29,18 +31,81 @@
             <!-- A container for page's sections -->
             <div id="sections-container">
                 <!-- TODO: create javascript drop down -->
+                <!-- TODO: Add the main sections of the styleguide in order to make it easier for the user to see. -->
             </div>
 
             <!-- The container for the content -->
-            <div id="content-container">
+            <div id="main-content-container">
+                <div class="sections-container">
+                    <h2>The Guide's Purpose</h2>
+                    <p>The purpose of this styleguide is to ensure that the design is consistent throughout the website.</p>
+                </div>
 
-                <!-- Interactive elements section -->
-                <h2 class="h2-styleguide"> Interactive Elements</h2>
+                <!-- Branding section -->
+                <div class="sections-container">
+                    <h2>Branding</h2>
 
+                    <!-- Fonts -->
+                    <section class="element">
+                        <h3>Fonts</h3>
+                    </section>
+
+                    <!-- Colors -->
+                    <section class="element">
+                        <h3>Color</h3>
+                    </section>
+
+                </div>
+
+                 <!-- Interactive elements section -->
+                <div class="sections-container">
+                    <h2> Interactive Elements</h2>
+
+                    <!-- In-text link -->
+                    <section class="element">
+                        <h3>In-text link</h3>
+
+                        <p>This element is to direct the users to another section or page of the website by clicking on the highlighted version of the text.</p>
+
+                        <div class="column-element-container">
+                            <div class="column-element">
+                                <h4>CSS selector:</h4>
+                                <p>.text-link</p>
+                            </div>
+                            
+                            <div class="column-element">
+                                <h4>Sample code:</h4>
+                                <code>&lt;a href="#" class="text-link"&gt;Text Link&lt;/a&gt;</code>
+                            </div>
+                        </div>
+
+                        <p>The in-text link will change color when it is being hovered. Furthermore, after selection, the in-text link will display a different color upon the user's return to the specified page.</p>
+                        
+                    </section>
+
+                    <section class="element">
+                        <h3>Button</h3>
+                    </section>
+
+                    <section class="element">
+                        <h3>Image as a Link</h3>
+                    </section>
+
+                    <section class="element">
+                        <h3>Navigation bar</h3>
+                    </section>
+                </div>
+
+                <!-- Text Elements section -->
+                <div class="sections-container">
+                    
+                </div>
 
             </div>
         </div>
 
-        
+        <footer>
+
+        </footer> 
     </body>
 </html>
