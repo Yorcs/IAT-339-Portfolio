@@ -42,7 +42,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    width:15%;
+    width:20%;
     padding-right: 2em;
 }
 
@@ -144,6 +144,21 @@ body{
     padding: 1em;
 }
 
+.column-element-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.responsibilities-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #1D3557;
+    align-items: center;
+    width: 100%;
+}
+
 /* Text elements */
 
 h1{
@@ -184,7 +199,6 @@ ul li::before{
     background-color: #1D3557;
     content: "\2022";
     font-weight: bold;
-    display: inline-block;
     font-family: Celebes;
     color:#F1FAEE;
 }
