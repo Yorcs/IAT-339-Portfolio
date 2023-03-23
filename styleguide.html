@@ -3,10 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Portfolio's Styleguide</title>
-
-        <!-- Taken from  getbootstrap.com-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <title>Portfolio's Styleguide - Chelsea Jennifer Irawan</title>
 
         <link href="css/main.css" rel="stylesheet">
     </head>
@@ -19,46 +16,56 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li>Works</li>
-                    <li></li>
                 </ul>
             </nav>
         </header>
 
         <div id="main-container">
-            <h1 id="h1-styleguide">Here are portfolio's styleguide</h1>
+            <h1 id="h1-styleguide">Here are the portfolio's styleguide</h1>
 
             <!-- A container for page's sections -->
-            <div id="sections-container">
-                <!-- TODO: create javascript drop down -->
-                <!-- TODO: Add the main sections of the styleguide in order to make it easier for the user to see. -->
+            <div class="sections-container">
+                <!-- TODO: create javascript drop down for mobile-->
+                <nav>
+                    <ul>
+                        <li><a href="#purpose-container">Guide's purpose</a></li>
+                        <li><a href="#branding-container">Branding</a></li>
+                        <li><a href="#interactive-container">Interactive features</a></li>
+                        <li><a href="#text-container">Text styling</a></li>
+                        <li><a href="#templates-container">Templates</a></li>
+                    </ul>
+                </nav>
             </div>
 
             <!-- The container for the content -->
             <div id="main-content-container">
-                <div class="sections-container">
+                <div id="purpose-container">
                     <h2>The Guide's Purpose</h2>
                     <p>The purpose of this styleguide is to ensure that the design is consistent throughout the website.</p>
                 </div>
 
                 <!-- Branding section -->
-                <div class="sections-container">
+                <div id="branding-container">
                     <h2>Branding</h2>
 
                     <!-- Fonts -->
                     <section class="element">
                         <h3>Fonts</h3>
+
                     </section>
 
                     <!-- Colors -->
                     <section class="element">
                         <h3>Color</h3>
+                        <p>I wanted the portfolio to mimic the sense of video games thus I was inspired to choose these colors to design it.</p>
+
+
                     </section>
 
                 </div>
 
                  <!-- Interactive elements section -->
-                <div class="sections-container">
+                <div id="interactive-container">
                     <h2> Interactive Elements</h2>
 
                     <!-- In-text link -->
@@ -80,24 +87,217 @@
                         </div>
 
                         <p>The in-text link will change color when it is being hovered. Furthermore, after selection, the in-text link will display a different color upon the user's return to the specified page.</p>
-                        
+
+                        <h4>Rendered element:</h4>
+                        <div class="render-element">
+                            <a class="text-link" href="">Text Link</a>   
+                        </div>      
                     </section>
 
+                    <!-- Buttons -->
                     <section class="element">
                         <h3>Button</h3>
+                        <p>This element is used to direct the users to another section within the page or another webpage.</p>
+
+                        <div class="column-element-container">
+                            <div class="column-element">
+                                <h4>CSS selector:</h4>
+                                <p>.btn</p>
+                            </div>
+                            
+                            <div class="column-element">
+                                <h4>Sample code:</h4>
+                                <code>&lt;a href="#" class="btn"&gt;Default Button&lt;/a&gt;</code>
+                            </div>
+                        </div>
+
+                        <p>Upon hovering it, the opacity of the button will change. Furthermore, once it has been selected and the user returns back to it, the element will display a different shade of the color.</p>
+
+                        <h4>Rendered element:</h4>
+                        <div class="render-element">
+                            <a class="btn" href="#combined_elements">Default Button</a>
+                        </div>
                     </section>
 
+                    <!-- Image as a link -->
                     <section class="element">
                         <h3>Image as a Link</h3>
+                        <p>An image that directs the users to another section within the page or another webpage.</p>
+
+                        <div class="column-element-container">
+                            <div class="column-element">
+                                <h4>CSS selector:</h4>
+                                <p>.image-link</p>
+                            </div>
+                            
+                            <div class="column-element">
+                                <h4>Sample code:</h4>
+                                <code>&lt;a class="image-link" href="https://www.google.com/"&gt; &lt;img src="img/aloe.jpg" alt = "image of a retro video game"&gt;&lt;/a&gt;</code>
+                            </div>
+                        </div>
+
+                        <p>Upon hovering it, the opacity of the image will change.</p>
+
+                        <h4>Rendered element:</h4>
+                        <div class="render-element">
+                            <a class="image-link" href="https://www.google.com/"><img src="img/aloe.jpg" alt = "image of a retro video game" ></a>
+                        </div>
+
+
                     </section>
 
-                    <section class="element">
-                        <h3>Navigation bar</h3>
-                    </section>
+                    <!-- TODO: Navigation bar -->
+                    <!-- Not created yet as it might not be necessary? -->
                 </div>
 
                 <!-- Text Elements section -->
-                <div class="sections-container">
+                <div id="text-container">
+                    <h2>Text elements</h2>
+
+                    <!-- Headings -->
+                    <section class="element">
+                        <h3>Headings</h3>
+
+                        <h4>Heading 1</h4>
+                        <div class="column-element-container">
+                            <div class="column-element">
+                                <h4>CSS selector:</h4>
+                                <p>h1</p>
+                            </div>
+                            
+                            <div class="column-element">
+                                <h4>Sample code:</h4>
+                                <code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code>
+                            </div>
+                        </div>
+
+                        <h4>Heading 2</h4>
+                        <div class="column-element-container">
+                            <div class="column-element">
+                                <h4>CSS selector:</h4>
+                                <p>h2</p>
+                            </div>
+                            
+                            <div class="column-element">
+                                <h4>Sample code:</h4>
+                                <code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code>
+                            </div>
+                        </div>
+
+                        <h4>Heading 3</h4>
+                        <div class="column-element-container">
+                            <div class="column-element">
+                                <h4>CSS selector:</h4>
+                                <p>h3</p>
+                            </div>
+                            
+                            <div class="column-element">
+                                <h4>Sample code:</h4>
+                                <code>&lt;h3&gt;Heading 3&lt;/h3&gt;</code>
+                            </div>
+                        </div>
+
+                        <h4>Heading 4</h4>
+                        <div class="column-element-container">
+                            <div class="column-element">
+                                <h4>CSS selector:</h4>
+                                <p>h4</p>
+                            </div>
+                            
+                            <div class="column-element">
+                                <h4>Sample code:</h4>
+                                <code>&lt;h4&gt;Heading 4&lt;/h4&gt;</code>
+                            </div>
+                        </div>
+
+                        <h4>Rendered element:</h4>
+                        <div class="render-element">
+                            <div class="column-element-container">
+                                <div class="column-element">
+                                    <h1>Heading 1</h1>
+                                </div>
+                                
+                                <div class="column-element">
+                                    <h2>Heading 2</h2>
+                                </div>
+
+                                <div class="column-element">
+                                    <h3>Heading 3</h3>
+                                </div>
+
+                                <div class="column-element">
+                                    <h4>Heading 4</h4>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </section>
+
+                    <!-- Paragraphs -->
+                    <section class="element">
+                        <h3>Paragraphs</h3>
+
+                        <div class="column-element-container">
+                            <div class="column-element">
+                                <h4>CSS selector:</h4>
+                                <p>p</p>
+                            </div>
+                            
+                            <div class="column-element">
+                                <h4>Sample code:</h4>
+                                <code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/p&gt;</code>
+                            </div>
+                        </div>
+
+                        <h4>Rendered element:</h4>
+                        <div class="render-element">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Mauris ex erat, ultrices in volutpat eget, accumsan ut urna. 
+                            Praesent vel augue sit amet enim pulvinar tempor. 
+                            Fusce gravida lorem vitae lacus vulputate tempor. 
+                            Ut non luctus orci. Curabitur cursus felis sit amet nibh dignissim, 
+                            id dapibus enim sodales. Mauris in consectetur tortor, sed posuere nulla. 
+                            Aliquam nunc turpis, placerat vitae metus at, laoreet bibendum neque. 
+                            Integer justo orci, tempus sed ultrices a, porttitor at ipsum. 
+                            Etiam sed lorem sit amet dolor faucibus accumsan. </p>
+                        </div>
+                    </section>
+                    
+                    <section class="element">
+                        <h3>Bullet Lists</h3>
+
+                        <div class="column-element-container">
+                            <div class="column-element">
+                                <h4>CSS selector:</h4>
+                                <p>ul</p>
+                            </div>
+                            
+                            <div class="column-element">
+                                <h4>Sample code:</h4>
+                                <code>&lt;ul&gt;
+                                    &lt;li&gt;Number 1&lt;/li&gt;
+                                    &lt;li&gt;Number 2&lt;/li&gt;
+                                    &lt;li&gt;Number 3&lt;/li&gt;
+                                    &lt;/ul&gt;</code>
+                            </div>
+                        </div>
+
+                        <h4>Rendered element:</h4>
+                        <div class="render-element">
+                            <ul>
+                                <li>Number 1</li>
+                                <li>Number 2</li>
+                                <li>Number 3</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Templates -->
+                <div id="templates-container">
+                    <h2>Templates</h2>
+
                     
                 </div>
 
