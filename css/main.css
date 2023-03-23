@@ -106,7 +106,7 @@ body{
     background-color: #A8DADC;
 }
 
-.column-element-container{
+.row-element-container-styleguide{
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -133,6 +133,17 @@ body{
     margin-bottom:4em;
 }
 
+.thumbnail-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #1D3557;
+    box-shadow: 3px 5px 5px #D9D9D9;
+    border-radius: 15px;
+    padding: 1em;
+}
+
 /* Text elements */
 
 h1{
@@ -147,6 +158,10 @@ h3{
     font-family: Sansita;
 }
 
+.h3-bluetint{
+    color: #F1FAEE;
+}
+
 h4{
     font-family: Sansita;
 }
@@ -154,6 +169,11 @@ h4{
 p{
     font-family: Celebes;
     padding-bottom: 2em;
+}
+
+.lightblue-paragraph{
+    color: #A8DADC;
+    width: 50%;
 }
 
 ul{
