@@ -31,11 +31,18 @@ body{
     padding-right: 2em;
 }
 
+#main-content-container-styleguide{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width:60%;
+}
+
 #main-content-container{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    width:60%;
+    flex-direction: column;
+    width:100%;
 }
 
 #sections-container{
@@ -117,6 +124,16 @@ body{
     margin-bottom: 2em;
 }
 
+.row-element-container{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    border-radius: 15px;
+    margin-bottom: 2em;
+}
+
 .column-element{
     display:flex;
     flex-wrap: wrap;
@@ -133,6 +150,25 @@ body{
     margin-bottom:4em;
 }
 
+.element-centered{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:4em;
+}
+
+.element-padded{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3em;
+    margin-left: 3em;
+    margin-bottom:4em;
+}
+
 .thumbnail-container{
     display: flex;
     flex-direction: column;
@@ -142,6 +178,7 @@ body{
     box-shadow: 3px 5px 5px #D9D9D9;
     border-radius: 15px;
     padding: 1em;
+    margin: 2em;
 }
 
 .column-element-container{
@@ -159,6 +196,16 @@ body{
     width: 100%;
 }
 
+.content-container-light-blue{
+    margin-left: 2em;
+    margin-right: 2em;
+    background-color: #A8DADC;
+    padding-bottom: 2em;
+    border-radius: 15px;
+    padding: 2em;
+    border-style: none;
+}
+
 /* Text elements */
 
 h1{
@@ -169,8 +216,16 @@ h2{
     font-family: Sansita;
 }
 
+.h2-bluetint{
+    color: #F1FAEE;
+}
+
 h3{
     font-family: Sansita;
+}
+
+.h3-gainsboro{
+    color: gainsboro;
 }
 
 .h3-bluetint{
@@ -191,11 +246,11 @@ p{
     width: 50%;
 }
 
-ul{
+.styleguide-list{
     list-style: none;
 }
 
-ul li::before{
+.styleguide-list li::before{
     background-color: #1D3557;
     content: "\2022";
     font-weight: bold;
@@ -203,10 +258,14 @@ ul li::before{
     color:#F1FAEE;
 }
 
-ul li{
+.styleguide-list li{
     background-color: #1D3557;
     font-family: Celebes;
     color: #A8DADC;
+}
+
+ul li{
+    margin-right: 3em;
 }
 
 /* Styleguide specific elements */
@@ -253,12 +312,14 @@ nav ul li a{
 }
 
 nav ul{
-    padding-top: 2em;
+    padding: 1em;
     background-color: #457B9D;
     border-radius: 15px;
+    display: flex;
+    flex-direction: row;
 }
 
-nav ul li::before{
+.section-nav .styleguide-list li::before{
     background-color: #457B9D;
     content: "\2022";
     font-weight: bold;
@@ -267,7 +328,7 @@ nav ul li::before{
     color:#F1FAEE;
 }
 
-nav ul li{
+.section-nav .styleguide-list li{
     background-color: #457B9D;
     font-family: Celebes;
     color: #F1FAEE;
