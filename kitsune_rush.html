@@ -9,21 +9,113 @@
     </head>
 
     <body>
+        <header>
+            <!-- TODO: Create hamburger side scroll to the left -->
+            <!-- TODO: Create a logo? for identity -->
+            <!-- TODO: Finish nav when pages are built. -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="styleguide.html">Styleguide</a></li>
+                </ul>
+            </nav>
+        </header>
+
         <div id="main-content-container">
             <div class="center-content">
-                <h1>Kitsune Rush</h1>
-                <p class="strong"> An IAT 410 project. Created alongside Para Upton, Harry Shiu, Elom Paradis</p>
+                <h1 class="h1-white">Kitsune Rush</h1>
+                <p class="strong-paragraph"> An IAT 410 project. Created alongside Para Upton, Harry Shiu, Elom Paradis</p>
             </div>
 
             <section class="element">
-                <p>Kitsune Rush is a fast paced 2D side scrolling roguelike platformer couch co-op game where the players work together to invade a mega-corporation’s headquarters. It can be played by up to four players. Players need to work alongside each other to defeat the enemies in order to reach the final boss in every stage.</p>
+                <p class="lightblue-paragraph">Kitsune Rush is a fast paced 2D side scrolling roguelike platformer couch co-op game where the players work together to invade a mega-corporation's headquarters. It can be played by up to four players. Players need to work alongside each other to defeat the enemies in order to reach the final boss in every stage.</p>
             </section>
 
-            <section class="element">
-                <p>This project was created using Unity in C++ language. One of my team members and I decided to do pair programming during the backend process so that it is easier to bounce ideas off each other. Furthermore, it is to hasten the quality check and debugging process of the project. I was mainly responsible for the shop’s mechanic of the game.</p>
-            </section>
+            <div class="content-container-light-blue">
+                <section class="element">
+                    <h2>Responsibilities</h2>
+                    <div class="responsibilities-container">
+                        <ul>
+                            <li>Level Design</li>
+                            <li>Weapon Ideation</li>
+                            <li>Core Mechanics</li>
+                            <li>Implementing shop mechanics</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
 
-            
+            <div class="content-container-light-white">
+                <section class="element">
+                    <h2>Main Process</h2>
+                    <p>This project was created using Unity in C++ language. One of my team members and I decided to do pair programming during the backend process so that it is easier to bounce ideas off each other. Furthermore, it is to hasten the quality check and debugging process of the project. I was mainly responsible for the shop's mechanic of the game.</p>
+                </section>
+            </div>
+
+            <div class="content-container-light-blue">
+                <section class="element">
+                    <h2>Design Challenges</h2>
+                    <div class="responsibilities-container">
+                        <ul>
+                            <li>The height of the level is not adjusted.</li>
+                            <li>Implementing the cutscene</li>
+                            <li>Adjustment to the core mechanics</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <div class="content-container-light-white">
+                <section class="element">
+                    <h2>Level Design</h2>
+
+                    <h3>Ideation process</h3>
+                    <p>As for the level design process I took inspiration from Mario games on how to design the platforms. I used Procreate to sketch out the placements of the platforms and the enemies in each level. Furthermore, to ensure that the game is engaging to the players, the difficulties progress as the players move along the level.</p>
+
+                    <div class ="content-container-dark">
+                        <h3 class="h1-white">Implementation</h3>
+                        <p class="lightblue-paragraph">By using the assets that one of my team members have created, I proceeded to design the levels in the game itself by using Unity. While implementing the tiles, I encountered some problems such as the space between the platforms are not large enough for the player to go through, or it is too far tall for the players to jump on. To encounter these problems, I made adjustments to the placement of the platforms.</p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="content-container-light-blue">
+                <section class="element">
+                    <h2>Weapon Ideation</h2>
+                    <p>Our team decided to implement two types of weapons, the main weapon that fires automatically and the sub weapon that can be triggered using a press of a button. I was mainly responsible for generating the ideas for both types. Out of all the ideas, we selected 6 weapons and 2 sub weapons. My team member was responsible for designing them while my other team members and myself were responsible for the implementation in Unity.</p>
+
+                    <div class="row-element-container">
+                        <div class="column-element">
+                            <img class = "weapon_img" src="img/pistol_v2.png" alt = "image of a hand gun" width="350" height="200" >
+                        </div>
+                        
+                        <div class="column-element">
+                            <img class = "weapon_img" src="img/machine_gun.png" alt = "image of a machine gun" width="350" height="200" >
+                        </div>
+
+                        <div class="column-element">
+                            <img class = "weapon_img" src="img/boomerang_2.png" alt = "image of a machine gun" width="350" height="200" >
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="content-container-light-white">
+                <section class="element">
+                    <h2>Shop Implementation</h2>
+                    <p>For the shop's implementation, I have created a random chance generator that allows the items to be cycled based on the drop rate. As a team, we decided to increase the likelihood of getting a weapon rather than a sub weapon. This was caused by the fact that the sub-weapons were designed to be more powerful than the weapons themselves. The random chance generator that I have created is also used as a base for the drop rate upon an enemy's death.</p>
+
+                    <div class="row-element-container">
+                        <div class="column-element">
+                            <img src="img/KitsuneRush_shop.png" alt = "image of a retro video game" width="600" height="450" >
+                        </div>
+                        
+                        <div class="column-element">
+                            <img src="img/KitsuneRush_drop.png" alt = "image of a retro video game" width="600" height="450" >
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
-
     </body>

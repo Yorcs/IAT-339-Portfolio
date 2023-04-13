@@ -3,19 +3,6 @@
 @import url('https://fonts.cdnfonts.com/css/sansita');
 @import url('https://fonts.cdnfonts.com/css/celebes');
 
-                
-                
-
-/* Mobile device up to 576 px */
-@media (max-width:575.98px){
-
-}
-
-/* Tablets up to 992px */
-@media (max-width: 991.98px){
-
-}
-
 /* Larger devices (Default) */
 
 /* Containers */
@@ -42,6 +29,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin:2em;
     width:100%;
 }
 
@@ -119,7 +107,7 @@ body{
     flex-direction: row;
     align-items: start;
     justify-content: center;
-    background-color: gainsboro;
+    background-color: #F1FAEE;
     border-radius: 15px;
     margin-bottom: 2em;
 }
@@ -147,7 +135,7 @@ body{
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    margin-bottom:4em;
+    margin-bottom:2em;
 }
 
 .element-centered{
@@ -191,7 +179,6 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #1D3557;
     align-items: center;
     width: 100%;
 }
@@ -206,10 +193,32 @@ body{
     border-style: none;
 }
 
+.content-container-light-white{
+    margin-left: 2em;
+    margin-right: 2em;
+    background-color: #F1FAEE;
+    padding-bottom: 2em;
+    border-radius: 15px;
+    padding: 2em;
+    border-style: none;
+}
+
+.content-container-dark{
+    background-color: #1D3557;
+    padding-bottom: 2em;
+    border-radius: 15px;
+    padding: 2em;
+    border-style: none;
+}
+
 /* Text elements */
 
 h1{
     font-family: Sansita;
+}
+
+.h1-white{
+    color: #F1FAEE
 }
 
 h2{
@@ -239,6 +248,7 @@ h4{
 p{
     font-family: Celebes;
     padding-bottom: 2em;
+    width: 50%;
 }
 
 .lightblue-paragraph{
@@ -246,26 +256,36 @@ p{
     width: 50%;
 }
 
+.strong-paragraph{
+    color: #A8DADC;
+    font-weight: bold;
+    border-color: white;
+    border-bottom: #F1FAEE;
+    border-style: solid;
+    border-top: #1D3557;
+    border-left: #1D3557;
+    border-right: #1D3557;
+    margin-bottom: 3em;
+}
+
 .styleguide-list{
     list-style: none;
 }
 
 .styleguide-list li::before{
-    background-color: #1D3557;
+    background-color: #457B9D;
     content: "\2022";
     font-weight: bold;
     font-family: Celebes;
     color:#F1FAEE;
 }
 
-.styleguide-list li{
-    background-color: #1D3557;
-    font-family: Celebes;
-    color: #A8DADC;
-}
-
-ul li{
-    margin-right: 3em;
+.center-content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Styleguide specific elements */
@@ -305,21 +325,63 @@ code{
     opacity: .5;
     transition: opacity .5s ease-out;
 }
-nav ul li a{
+ul li a{
     font-family: Sansita;
     text-decoration: none;
     color: #F1FAEE;
 }
 
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav ul li{
+    margin-left: 4em;
     padding: 1em;
     background-color: #457B9D;
     border-radius: 15px;
-    display: flex;
-    flex-direction: row;
 }
 
-.section-nav .styleguide-list li::before{
+ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li{
+    margin-left: 3em;
+}
+
+.styleguide-list{
+    width: 70%;
+    padding-top: 2em;
+    background-color: #457B9D;
+    border-radius: 15px;
+}
+
+.styleguide-list li{
+    width: 90%;
+}
+
+.section-nav{
+    display: block;
+}
+
+
+.styleguide-list li::before{
     background-color: #457B9D;
     content: "\2022";
     font-weight: bold;
@@ -328,7 +390,7 @@ nav ul{
     color:#F1FAEE;
 }
 
-.section-nav .styleguide-list li{
+ .styleguide-list li{
     background-color: #457B9D;
     font-family: Celebes;
     color: #F1FAEE;
@@ -356,4 +418,77 @@ nav ul{
 .btn:hover, .btn:focus{
     opacity: .5;
     transition: opacity .5s ease-out;
+}
+
+/* Mobile device up to 576 px */
+@media (max-width:575.98px){
+    #main-content-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin:0em;
+        width:100%;
+    }
+    .content-container-light-blue{
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+
+    .content-container-light-white{
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+
+    .lightblue-paragraph{
+        margin-left: 3em;
+        width: 80%;
+    }
+
+    ul li{
+        margin-left:2em;
+        margin-bottom: 2em;
+    }
+
+    .element{
+        margin-bottom: 1em;
+    }
+
+    p{
+        width: 80%;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    nav{
+        justify-content: center;
+        width: 100%;
+    }
+
+    nav ul li{
+        margin-left: 2em;
+        padding: 1em;
+        background-color: #457B9D;
+        border-radius: 15px;
+    }
+
+    .weapon_img{
+        width: 20%;
+        height:20%;
+    }
+
+    img{
+        width: 80%;
+        height: 80%;
+    }
+}
+
+/* Tablets up to 992px */
+@media (max-width: 991.98px){
+
 }
