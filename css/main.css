@@ -256,6 +256,10 @@ p{
     width: 50%;
 }
 
+img{
+    margin-bottom: 2em;
+}
+
 .strong-paragraph{
     color: #A8DADC;
     font-weight: bold;
@@ -486,9 +490,24 @@ ul li{
         width: 80%;
         height: 80%;
     }
+
+    #main-container{
+        flex-direction: column;
+    }
+
+    #sections-container{
+        flex-direction: row;
+        width: 80%;
+    }
 }
 
 /* Tablets up to 992px */
 @media (max-width: 991.98px){
-
+    #main-container{
+        flex-direction: column;
+    }
+    #sections-container{
+        flex-direction: row;
+        width: 80%;
+    }
 }
